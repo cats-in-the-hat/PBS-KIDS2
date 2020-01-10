@@ -28,6 +28,14 @@ The outcomes in this competition are grouped into 4 groups (labeled accuracy_gro
 
 # Data Dictionary
 
+- Size of train data (11341042, 9)
+
+- Size of train_labels data (17690, 7)
+
+- Size of specs data (386, 3)
+
+- Size of test data (1156414, 9)
+
 ## -> train.csv and test.csv
 
 event_id - Randomly generated unique identifier for the event type. Maps to event_id column in specs table.
