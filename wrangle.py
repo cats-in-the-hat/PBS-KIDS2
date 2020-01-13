@@ -11,9 +11,10 @@ def get_train_labels():
     return train_labels
 
 def get_assessment_users(cache=True):
-    if cache:
+    if cache == True:
         assessment_users = pd.read_csv('./data/assessment_users.csv')
-        assessment_users.drop(columns = ['Unnamed: 0', inplace = True])
+        assessment_users.drop(columns = ['Unnamed: 0'], inplace = True)
+        #assessment_users.head()
     else:
         train = get_train()
         train_labels = get_train_labels()
@@ -31,6 +32,8 @@ def get_assessment_users(cache=True):
         assessment_users['hour'] = assessment_users['timestamp'].dt.hour
         assessment_users['weekday'] = assessment_users['timestamp'].dt.weekday_name
 
-        assessment_users = assessment_users.to_csv('./data/assessment_users.csv')
+        assessment_users.to_csv('./data/assessment_users.csv')
 
-        return assessment_users
+    return assessment_users
+
+# assessment_users = get_assessment_users()
