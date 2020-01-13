@@ -19,7 +19,7 @@ def get_assessment_users(cache=True):
         train = get_train()
         train_labels = get_train_labels()
         
-        df = pd.merge(train_df, train_labels, how = 'left', on = 'game_session')
+        df = pd.merge(train, train_labels, how = 'left', on = 'game_session')
         df.drop(columns = ['installation_id_y', 'title_y'], inplace = True)
         df.rename(columns = {'installation_id_x': 'installation_id', 'title_x': 'title'}, inplace = True)
         
