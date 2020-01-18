@@ -2,7 +2,7 @@
 
 # Goals
 
-The goal of the project is to look for the drivers of children’s success on assessments in the PBS-KIDS Measure Up! application. The insights can inform teachers and parents on how 3-5-year old children learn. Our team will deliver a presentation documenting our findings and recommendations.
+The goal of the project is to look for the drivers of children’s success on assessments in the PBS-KIDS Measure Up! application. The insights can inform teachers and parents on how well using the different activities in the application prepare 3-5-year old children for the application’s final assessments. Our team will deliver a presentation documenting our findings and recommendations.
 
 We acquired our data from the current Kaggle competition featured in Booz Allen Hamilton's Data Science Bowl. The writeup for the competition reads:
 
